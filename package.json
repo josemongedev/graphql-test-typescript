@@ -2,11 +2,11 @@
   "private": true,
   "name": "backend",
   "version": "1.0.0",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
     "compile": "tsc",
-    "start": "npm run compile && node ./dist/index.js"
+    "start": "npm run compile && NODE_PATH=dist node ./dist/index.js"
   },
   "devDependencies": {
     "@types/express": "^4.17.17",
